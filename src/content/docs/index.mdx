@@ -1,0 +1,53 @@
+---
+title: Indentier
+description: A silly formatter that hides {, }, ;, and trailing , in the right margin — letting curly-brace languages pretend they're Python or Ruby.
+template: splash
+hero:
+  image:
+    file: ../../assets/icon.png
+    alt: Indentier
+  tagline: Make curly-braces pretend they're Python.
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/indentier/indentier
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+```js
+// before
+function greet(name) {
+  if (!name) {
+    return "hello";
+  }
+}
+
+// after (default mode)
+function greet(name)                                       {
+  if (!name)                                               {
+    return "hello";                                        }}
+```
+
+## Features
+
+<CardGrid stagger>
+  <Card title="Zero-AST" icon="rocket">
+    Pure regex + heuristic pipeline — no parser, no AST, just vibes.
+  </Card>
+  <Card title="Plugin system" icon="puzzle">
+    JS/TS built-in. Rust, Go, C, PHP, Java, C#, CSS via `@indentier/plugin-*`.
+  </Card>
+  <Card title="Ruby mode" icon="star">
+    Inject synthetic `end` statements to make curly-brace code look even more Ruby-like.
+  </Card>
+  <Card title="Idempotent" icon="approve-check">
+    `format(format(x)) === format(x)` — safe to run repeatedly.
+  </Card>
+</CardGrid>
+

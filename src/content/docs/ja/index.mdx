@@ -1,0 +1,53 @@
+---
+title: Indentier
+description: '{ } ; , を右端に隠して、波括弧言語に Python や Ruby のフリをさせる、ふざけたフォーマッター。'
+template: splash
+hero:
+  image:
+    file: ../../../assets/icon.png
+    alt: Indentier
+  tagline: 波括弧言語に、Python のフリをさせる。
+  actions:
+    - text: はじめに
+      link: /ja/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: GitHub で見る
+      link: https://github.com/indentier/indentier
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+```js
+// before
+function greet(name) {
+  if (!name) {
+    return "hello";
+  }
+}
+
+// after (default mode)
+function greet(name)                                       {
+  if (!name)                                               {
+    return "hello";                                        }
+}
+```
+
+## 特徴
+
+<CardGrid stagger>
+  <Card title="AST なし" icon="rocket">
+    正規表現＋ヒューリスティックのみ — パーサーも AST も不要。とにかく速い。
+  </Card>
+  <Card title="プラグインシステム" icon="puzzle">
+    JS/TS はビルトイン。Rust・Go・C・PHP・Java・C#・CSS は `@indentier/plugin-*` で対応。
+  </Card>
+  <Card title="ruby モード" icon="star">
+    閉じ括弧の後に擬似 `end` を注入して、波括弧言語をさらに Ruby っぽく見せます。
+  </Card>
+  <Card title="冪等性" icon="approve-check">
+    `format(format(x)) === format(x)` — 何度実行しても結果が変わりません。
+  </Card>
+</CardGrid>
