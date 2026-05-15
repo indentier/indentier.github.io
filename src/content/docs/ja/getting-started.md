@@ -52,7 +52,7 @@ coverage/
 
 ## 言語プラグインを追加する
 
-コアパッケージは **JavaScript / TypeScript / JSON 系** (`.json`, `.jsonc`, `.json5`) をネイティブにサポートします。  
+コアパッケージは **JavaScript / TypeScript / JSON 系** (`.json`, `.jsonc`, `.json5`) をネイティブにサポートします。JSX / TSX は [`@indentier/plugin-jsx`](https://github.com/indentier/plugin-jsx) をインストールしてください。  
 他の言語にはプラグインをインストールしてください:
 
 ```sh

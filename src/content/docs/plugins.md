@@ -9,8 +9,9 @@ The core `indentier` package handles **JavaScript, TypeScript, and the JSON fami
 
 | Plugin | Languages | Extensions | Ruby mode | Declaration |
 |-|-|-|-|-|
-| *(core)* | JavaScript / TypeScript | `.js` `.cjs` `.mjs` `.jsx` `.ts` `.cts` `.mts` `.tsx` | ✅ | `let end=null;` |
+| *(core)* | JavaScript / TypeScript | `.js` `.cjs` `.mjs` `.ts` `.cts` `.mts` | ✅ | `let end=null;` |
 | *(core)* | JSON family | `.json` `.jsonc` `.json5` | ❌ | — |
+| [`@indentier/plugin-jsx`](https://github.com/indentier/plugin-jsx) | JSX / TSX | `.jsx` `.tsx` | ✅ | `let end=null;` |
 | [`@indentier/plugin-rust`](https://github.com/indentier/plugin-rust) | Rust | `.rs` | ✅ | `const end:()=();` |
 | [`@indentier/plugin-go`](https://github.com/indentier/plugin-go) | Go | `.go` | ✅ | `var end any=nil` |
 | [`@indentier/plugin-c`](https://github.com/indentier/plugin-c) | C / C++ | `.c` `.h` `.cpp` `.hpp` | ✅ | `void*end=0;` |

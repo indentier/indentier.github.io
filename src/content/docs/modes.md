@@ -71,6 +71,7 @@ Each plugin declares whether it supports ruby mode. For plugins that do, the dec
 | Plugin | Declaration |
 |-|-|
 | *(core)* | `let end=null;` |
+| `@indentier/plugin-jsx` | `let end=null;` |
 | `@indentier/plugin-rust` | `const end:()=();` |
 | `@indentier/plugin-go` | `var end any=nil` |
 | `@indentier/plugin-c` | `void*end=0;` |

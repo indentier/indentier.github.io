@@ -52,7 +52,7 @@ coverage/
 
 ## Adding language plugins
 
-The core package handles **JavaScript, TypeScript, and the JSON family** (`.json`, `.jsonc`, `.json5`) natively. For other languages install a plugin:
+The core package handles **JavaScript, TypeScript, and the JSON family** (`.json`, `.jsonc`, `.json5`) natively. For JSX / TSX, install [`@indentier/plugin-jsx`](https://github.com/indentier/plugin-jsx). For other languages install a plugin:
 
 ```sh
 npm i -D @indentier/plugin-rust

@@ -71,6 +71,7 @@ end
 | プラグイン | 宣言 |
 |-|-|
 | *(コア)* | `let end=null;` |
+| `@indentier/plugin-jsx` | `let end=null;` |
 | `@indentier/plugin-rust` | `const end:()=();` |
 | `@indentier/plugin-go` | `var end any=nil` |
 | `@indentier/plugin-c` | `void*end=0;` |
