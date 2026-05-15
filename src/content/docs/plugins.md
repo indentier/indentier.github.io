@@ -3,13 +3,14 @@ title: Plugins
 description: Extend Indentier to support more languages via plugins.
 ---
 
-The core `indentier` package handles **JavaScript and TypeScript** natively. All other languages are supported through plugin packages.
+The core `indentier` package handles **JavaScript, TypeScript, and the JSON family** (`.json`, `.jsonc`, `.json5`) natively. All other languages are supported through plugin packages.
 
 ## Supported languages
 
 | Plugin | Languages | Extensions | Ruby mode | Declaration |
 |-|-|-|-|-|
 | *(core)* | JavaScript / TypeScript | `.js` `.cjs` `.mjs` `.jsx` `.ts` `.cts` `.mts` `.tsx` | ✅ | `let end=null;` |
+| *(core)* | JSON family | `.json` `.jsonc` `.json5` | ❌ | — |
 | [`@indentier/plugin-rust`](https://github.com/indentier/plugin-rust) | Rust | `.rs` | ✅ | `const end:()=();` |
 | [`@indentier/plugin-go`](https://github.com/indentier/plugin-go) | Go | `.go` | ✅ | `var end any=nil` |
 | [`@indentier/plugin-c`](https://github.com/indentier/plugin-c) | C / C++ | `.c` `.h` `.cpp` `.hpp` | ✅ | `void*end=0;` |

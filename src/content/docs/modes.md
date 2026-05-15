@@ -21,8 +21,8 @@ function greet(name) {
 // default mode output
 function greet(name)                                        {
   if (!name)                                                {
-    return "hello";                                         }
-  return `hi, ${name}`;                                     }
+    return "hello"                                          ;}
+  return `hi, ${name}`                                      ;}
 ```
 
 ## ruby mode
@@ -34,11 +34,12 @@ Everything `default` does, **plus**:
 
 ```js
 // ruby mode output
-function greet(name)                                        { let end=null;
+                                                            let end=null;
+function greet(name)                                        {
   if (!name)                                                {
-    return "hello";                                         }
+    return "hello"                                          ;}
   end
-  return `hi, ${name}`;                                     }
+  return `hi, ${name}`                                      ;}
 end
 ```
 

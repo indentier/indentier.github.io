@@ -52,7 +52,7 @@ coverage/
 
 ## 言語プラグインを追加する
 
-コアパッケージは **JavaScript と TypeScript** のみをネイティブにサポートします。  
+コアパッケージは **JavaScript / TypeScript / JSON 系** (`.json`, `.jsonc`, `.json5`) をネイティブにサポートします。  
 他の言語にはプラグインをインストールしてください:
 
 ```sh

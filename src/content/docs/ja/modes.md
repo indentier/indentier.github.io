@@ -21,8 +21,8 @@ function greet(name) {
 // default モード 出力
 function greet(name)                                        {
   if (!name)                                                {
-    return "hello";                                         }
-  return `hi, ${name}`;                                     }
+    return "hello"                                          ;}
+  return `hi, ${name}`                                      ;}
 ```
 
 ## ruby モード
@@ -34,11 +34,12 @@ function greet(name)                                        {
 
 ```js
 // ruby モード 出力
-function greet(name)                                        { let end=null;
+                                                            let end=null;
+function greet(name)                                        {
   if (!name)                                                {
-    return "hello";                                         }
+    return "hello"                                          ;}
   end
-  return `hi, ${name}`;                                     }
+  return `hi, ${name}`                                      ;}
 end
 ```
 
